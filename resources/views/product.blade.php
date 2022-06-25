@@ -11,7 +11,7 @@
                     @if ($product->stock)
                         <div class="my-3">
                             <span
-                                class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-rose-100 text-rose-800">Em
+                                class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Em
                                 estoque</span>
                         </div>
                     @endif
