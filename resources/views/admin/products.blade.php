@@ -6,7 +6,7 @@
                 <div class="flex items-center justify-between mb-2">
                     <h1 class="text-2xl font-medium title-font mb-2 text-gray-900">Produtos</h1>
                     <a
-                        class="flex ml-auto text-white bg-indigo-500 border-0 py-1.5 px-3 text-sm focus:outline-none hover:bg-indigo-600 rounded">Adicionar</a>
+                        class="flex ml-auto text-white bg-rose-500 border-0 py-1.5 px-3 text-sm focus:outline-none hover:bg-rose-600 rounded">Adicionar</a>
                 </div>
                 <table class="table-auto w-full text-left whitespace-no-wrap">
                     <thead>
@@ -37,8 +37,8 @@
                             <td class="px-4 py-3">R$10</td>
                             <td class="px-4 py-3">10</td>
                             <td class="px-4 py-3 text-sm text-right space-x-3 text-gray-900">
-                                <a class="mt-3 text-indigo-500 inline-flex items-center">Editar</a>
-                                <a class="mt-3 text-indigo-500 inline-flex items-center">Deletar</a>
+                                <a class="mt-3 text-rose-500 inline-flex items-center">Editar</a>
+                                <a class="mt-3 text-rose-500 inline-flex items-center">Deletar</a>
                             </td>
                         </tr>
                         <tr class="bg-gray-50">
@@ -51,8 +51,8 @@
                             <td class="px-4 py-3">R$10</td>
                             <td class="px-4 py-3">10</td>
                             <td class="px-4 py-3 text-sm text-right space-x-3 text-gray-900">
-                                <a class="mt-3 text-indigo-500 inline-flex items-center">Editar</a>
-                                <a class="mt-3 text-indigo-500 inline-flex items-center">Deletar</a>
+                                <a class="mt-3 text-rose-500 inline-flex items-center">Editar</a>
+                                <a class="mt-3 text-rose-500 inline-flex items-center">Deletar</a>
                             </td>
                         </tr>
                     </tbody>

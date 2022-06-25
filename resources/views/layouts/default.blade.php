@@ -6,20 +6,20 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>E-Commerce</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header class="text-gray-600">
         <div class="container mx-auto flex justify-between items-center p-5 items-center">
-            <a class="flex title-font font-medium items-center text-gray-900">
+            <a href="{{ route('home') }}" class="flex title-font font-medium items-center text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-rose-500 rounded-full"
                     viewBox="0 0 24 24">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
-                <span class="ml-3 text-xl">My store</span>
+                <span class="ml-3 text-xl">Laravel E-Commerce</span>
             </a>
             <div class="flex items-center">
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -45,10 +45,10 @@
                     <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
                         <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
                         <input type="text" id="footer-field" name="footer-field"
-                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-rose-200 focus:border-rose-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                     <button
-                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+                        class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded">Button</button>
                     <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Bitters chicharrones
                         fanny pack
                         <br class="lg:block hidden">waistcoat green juice
