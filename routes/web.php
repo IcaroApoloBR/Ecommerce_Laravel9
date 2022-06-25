@@ -18,7 +18,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/produto/{product:slug}', [ProductController::class, 'show'])->name('produto');
+Route::get('/produto/{product:slug}', [ProductController::class, 'show'])->name('product');
 
-Route::get('/admin/produtos', [AdminProductController::class, 'index'])->name('admin.produtos');
-Route::get('/admin/editar', [AdminProductController::class, 'edit'])->name('admin.produtos.editar');
+Route::get('/admin/produtos', [AdminProductController::class, 'index'])->name('admin.products');
+Route::get('/admin/produtos/criar', [AdminProductController::class, 'create'])->name('admin.product.create');
+Route::post('/admin/produtos', [AdminProductController::class, 'store'])->name('admin.product.store');
+
+Route::get('/admin/produtos/{product}/editar', [AdminProductController::class, 'edit'])->name('admin.product.edit');
+Route::put('/admin/produtos/{product}', [AdminProductController::class, 'update'])->name('admin.product.update');
