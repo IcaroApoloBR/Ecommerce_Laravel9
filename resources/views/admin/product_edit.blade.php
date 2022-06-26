@@ -14,7 +14,7 @@
                     <div class="flex flex-wrap">
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="name" class="leading-7 text-sm text-gray-600">Nome do produto</label>
+                                <label for="name" class="leading-7 text-sm text-gray-600">Nome do Produto</label>
                                 <input value="{{ $product->name }}" type="text" id="name" name="name"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-rose-500 focus:bg-white focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
@@ -38,11 +38,18 @@
 
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="name" class="leading-7 text-sm text-gray-600">Imagem de capa</label>
+                                <label for="name" class="leading-7 text-sm text-gray-600">Imagem de Capa</label>
                                 <input type="file" id="cover" name="cover"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-rose-500 focus:bg-white focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                             </div>
                         </div>
+
+                        @if ($product->cover)
+                            <div class="p-2 w-full">
+                                <img src="{{ \Illuminate\Support\Facades\Storage::url($product->cover) }}" alt="" style="width: 100px;">
+                                <a href="{{ route('admin.product.destroyImage', $product->id) }}">Deletar imagem</a>
+                            </div>
+                        @endif
 
                         <div class="p-2 w-full">
                             <div class="relative">
