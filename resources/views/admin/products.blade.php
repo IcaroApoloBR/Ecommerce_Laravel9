@@ -6,7 +6,7 @@
                 <div class="flex items-center justify-between mb-2">
                     <h1 class="text-2xl font-medium title-font mb-2 text-gray-900">Produtos</h1>
                     <a href="{{ route('admin.product.create') }}"
-                        class="flex ml-auto text-white bg-rose-500 border-0 py-1.5 px-3 text-sm focus:outline-none hover:bg-rose-600 rounded">Adicionar</a>
+                        class="flex ml-auto text-white bg-blue-500 border-0 py-1.5 px-3 text-sm focus:outline-none hover:bg-blue-600 rounded">Adicionar</a>
                 </div>
                 <table class="table-auto w-full text-left whitespace-no-wrap">
                     <thead>
@@ -42,7 +42,7 @@
                                 <td class="px-4 py-3">{{ $product->stock }}</td>
                                 <td class="px-4 py-3 text-sm text-right space-x-3 text-gray-900">
                                     <a href="{{ route('admin.product.edit', $product->id) }}"
-                                        class="mt-3 text-rose-500 inline-flex items-center">Editar</a>
+                                        class="mt-3 text-green-500 inline-flex items-center">Editar</a>
                                     {{-- <a href="{{ route('admin.product.destroy', $product->id) }}"
                                         class="mt-3 text-rose-500 inline-flex items-center">Deletar</a> --}}
                                     <form method="post" action="{{ route('admin.product.destroy', $product->id) }}">

@@ -67,7 +67,7 @@
 
                         <div class="p-2 w-full">
                             <button type="submit"
-                                class="flex ml-auto text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded">Adicionar</button>
+                                class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Adicionar</button>
                         </div>
 
                     </div>

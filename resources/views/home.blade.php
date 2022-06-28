@@ -10,7 +10,7 @@
 
                 <div class="flex items-center space-x-2">
                     <button type="submit"
-                        class="flex ml-auto text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded">Pesquisar</button>
+                        class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Pesquisar</button>
                     <a href="/">Limpar</a>
                 </div>
             </form>
@@ -27,7 +27,7 @@
                         </a>
                         <div class="mt-4">
                             <h2 class="text-gray-900 title-font text-lg font-medium">{{ $product->name }}</h2>
-                            <p class="mt-1">R${{ $product->price }}</p>
+                            <p class="mt-1 text-green-600 title-font text-lg font-medium">R${{ $product->price }}</p>
                         </div>
                         <a href="{{ route('product', $product->slug) }}"
                             class="mt-3 text-rose-500 inline-flex items-center">Ver mais
