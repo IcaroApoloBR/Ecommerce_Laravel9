@@ -40,7 +40,7 @@ class AdminProductController extends Controller
         $product->fill($input);
         $product->save();
 
-        return Redirect::route('admin.products');
+        return Redirect::route('admin.products')->with('success', 'Produto editado com sucesso!');
     }
 
     // Show create page
@@ -65,7 +65,7 @@ class AdminProductController extends Controller
 
         Product::create($input);
 
-        return Redirect::route('admin.products');
+        return Redirect::route('admin.products')->with('success', 'Produto criado com sucesso!');
     }
 
     public function destroy(Product $product)
@@ -73,7 +73,7 @@ class AdminProductController extends Controller
         $product->delete();
         Storage::delete($product->cover ?? '');
 
-        return Redirect::route('admin.products');
+        return Redirect::route('admin.products')->with('success', 'Produto deletado com sucesso!');
     }
 
     public function destroyImage(Product $product)
